@@ -167,3 +167,71 @@ input[type=text], input[type=email], textarea {
     padding: 10px;
     margin: 4px;
 }
+
+/* Media tags for responsiveness */
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .headclass {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+    body { 
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .mainsection{
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+    
+    .header-right {
+        right: 0;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .headclass { 
+        display: absolute;
+        background-color: #4aaaa5;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .name {
+        background-color: transparent;
+        color: #ffffff;
+        width: 70%;
+        height: 90px;
+        top: 20px;
+        position: absolute;
+        display: block;
+    }
+    
+    .header-right {
+        display: block;
+        background-color: #ffffff;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        font-size: 125%;
+        border-bottom: 2px solid;
+    }
+
+    body { 
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .mainsection {
+        max-width: 640px;
+        word-wrap: break-word;
+        margin-top: 18%;
+    }
+}
